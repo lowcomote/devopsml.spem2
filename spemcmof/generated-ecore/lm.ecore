@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="lm" nsURI="http://schema.omg.org/spec/UML/2.1.1/umlLM.xml" nsPrefix="uml">
+  <eAnnotations source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <details key="originalName" value="LM"/>
+  </eAnnotations>
+</ecore:EPackage>

@@ -1,0 +1,169 @@
+<!-- This XML file does not appear to have any style information associated with it. The document tree is shown below. -->
+<uml:Profile xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xmi:version="2.1" xmi:id="_0" name="SPEM 2.0 Base Plugin Profile" metamodelReference="_packageImport.1">
+<packageImport xmi:type="uml:PackageImport" xmi:id="_packageImport.1" visibility="private" importingNamespace="_0">
+<importedPackage xmi:type="uml:Model" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#_0"/>
+</packageImport>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="WorkProductRelationshipKind" name="WorkProductRelationshipKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="WorkProductRelationshipKind-base_Association" name="base_Association" association="Association_WorkProductRelationshipKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Association"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ImpactedBy" name="ImpactedBy">
+<generalization xmi:type="uml:Generalization" xmi:id="ImpactedBy-_generalization.0" general="WorkProductRelationshipKind" specific="ImpactedBy"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Composition" name="Composition">
+<generalization xmi:type="uml:Generalization" xmi:id="Composition-_generalization.0" general="WorkProductRelationshipKind" specific="Composition"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Primary" name="Primary">
+<generalization xmi:type="uml:Generalization" xmi:id="Primary-_generalization.0" general="PerformerKind" specific="Primary"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Additional" name="Additional">
+<generalization xmi:type="uml:Generalization" xmi:id="Additional-_generalization.0" general="PerformerKind" specific="Additional"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="PerformerKind" name="PerformerKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="PerformerKind-base_Association" name="base_Association" association="Association_PerformerMapKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Association"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Assisting" name="Assisting">
+<generalization xmi:type="uml:Generalization" xmi:id="Assisting-_generalization.0" general="PerformerKind" specific="Assisting"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="WorkProductKind" name="WorkProductKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="WorkProductKind-base_Class" name="base_Class" association="Class_WorkProductKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Class"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Artifact" name="Artifact">
+<generalization xmi:type="uml:Generalization" xmi:id="Artifact-_generalization.0" general="WorkProductKind" specific="Artifact"/>
+<icon xmi:type="uml:Image" xmi:id="Artifact-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="Artifact-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Deliverable" name="Deliverable">
+<generalization xmi:type="uml:Generalization" xmi:id="Deliverable-_generalization.0" general="WorkProductKind" specific="Deliverable"/>
+<icon xmi:type="uml:Image" xmi:id="Deliverable-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="Deliverable-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Outcome" name="Outcome">
+<generalization xmi:type="uml:Generalization" xmi:id="Outcome-_generalization.0" general="WorkProductKind" specific="Outcome"/>
+<icon xmi:type="uml:Image" xmi:id="Outcome-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="Outcome-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="CategoryKind" name="CategoryKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="CategoryKind-base_Class" name="base_Class" association="Class_CategoryKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Class"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Discipline" name="Discipline">
+<generalization xmi:type="uml:Generalization" xmi:id="Discipline-_generalization.0" general="CategoryKind" specific="Discipline"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Process" name="Process">
+<generalization xmi:type="uml:Generalization" xmi:id="Process-_generalization.0" general="ActivityKind" specific="Process"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ProcessPattern" name="ProcessPattern">
+<generalization xmi:type="uml:Generalization" xmi:id="ProcessPattern-_generalization.0" general="Process" specific="ProcessPattern"/>
+<icon xmi:type="uml:Image" xmi:id="ProcessPattern-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="ProcessPattern-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="DeliveryProcess" name="DeliveryProcess">
+<generalization xmi:type="uml:Generalization" xmi:id="DeliveryProcess-_generalization.0" general="Process" specific="DeliveryProcess"/>
+<icon xmi:type="uml:Image" xmi:id="DeliveryProcess-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="DeliveryProcess-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ActivityKind" name="ActivityKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="ActivityKind-base_Classifier" name="base_Classifier" association="Classifier_ActivityKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Classifier"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Iteration" name="Iteration">
+<generalization xmi:type="uml:Generalization" xmi:id="Iteration-_generalization.0" general="ActivityKind" specific="Iteration"/>
+<icon xmi:type="uml:Image" xmi:id="Iteration-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="Iteration-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Phase" name="Phase">
+<generalization xmi:type="uml:Generalization" xmi:id="Phase-_generalization.0" general="ActivityKind" specific="Phase"/>
+<icon xmi:type="uml:Image" xmi:id="Phase-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="Phase-_icon.1"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Aggregation" name="Aggregation">
+<generalization xmi:type="uml:Generalization" xmi:id="Aggregation-_generalization.0" general="WorkProductRelationshipKind" specific="Aggregation"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Checklist" name="Checklist">
+<generalization xmi:type="uml:Generalization" xmi:id="Checklist-_generalization.0" general="GuidanceKind" specific="Checklist"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="GuidanceKind" name="GuidanceKind" isAbstract="true">
+<ownedAttribute xmi:type="uml:Property" xmi:id="GuidanceKind-base_Class" name="base_Class" association="Class_GuidanceKind">
+<type xmi:type="uml:Class" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Class"/>
+</ownedAttribute>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Concept" name="Concept">
+<generalization xmi:type="uml:Generalization" xmi:id="Concept-_generalization.0" general="GuidanceKind" specific="Concept"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Estimate" name="Estimate">
+<generalization xmi:type="uml:Generalization" xmi:id="Estimate-_generalization.0" general="GuidanceKind" specific="Estimate"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="EstimationConsiderations" name="EstimationConsiderations">
+<generalization xmi:type="uml:Generalization" xmi:id="EstimationConsiderations-_generalization.0" general="GuidanceKind" specific="EstimationConsiderations"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Example" name="Example">
+<generalization xmi:type="uml:Generalization" xmi:id="Example-_generalization.0" general="GuidanceKind" specific="Example"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Guideline" name="Guideline">
+<generalization xmi:type="uml:Generalization" xmi:id="Guideline-_generalization.0" general="GuidanceKind" specific="Guideline"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Practice" name="Practice">
+<generalization xmi:type="uml:Generalization" xmi:id="Practice-_generalization.0" general="GuidanceKind" specific="Practice"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Report" name="Report">
+<generalization xmi:type="uml:Generalization" xmi:id="Report-_generalization.0" general="GuidanceKind" specific="Report"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ReusableAsset" name="ReusableAsset">
+<generalization xmi:type="uml:Generalization" xmi:id="ReusableAsset-_generalization.0" general="GuidanceKind" specific="ReusableAsset"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="SupportingMaterial" name="SupportingMaterial">
+<generalization xmi:type="uml:Generalization" xmi:id="SupportingMaterial-_generalization.0" general="GuidanceKind" specific="SupportingMaterial"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Template" name="Template">
+<generalization xmi:type="uml:Generalization" xmi:id="Template-_generalization.0" general="GuidanceKind" specific="Template"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="TermDefinition" name="TermDefinition">
+<generalization xmi:type="uml:Generalization" xmi:id="TermDefinition-_generalization.0" general="GuidanceKind" specific="TermDefinition"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ToolMentor" name="ToolMentor">
+<generalization xmi:type="uml:Generalization" xmi:id="ToolMentor-_generalization.0" general="GuidanceKind" specific="ToolMentor"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Whitepaper" name="Whitepaper">
+<generalization xmi:type="uml:Generalization" xmi:id="Whitepaper-_generalization.0" general="GuidanceKind" specific="Whitepaper"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="RoleSet" name="RoleSet">
+<generalization xmi:type="uml:Generalization" xmi:id="RoleSet-_generalization.0" general="CategoryKind" specific="RoleSet"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="Domain" name="Domain">
+<generalization xmi:type="uml:Generalization" xmi:id="Domain-_generalization.0" general="CategoryKind" specific="Domain"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ToolCategory" name="ToolCategory">
+<generalization xmi:type="uml:Generalization" xmi:id="ToolCategory-_generalization.0" general="CategoryKind" specific="ToolCategory"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Classifier_ActivityKind" name="Classifier_ActivityKind" memberEnd="Classifier_ActivityKind-extension_ActivityKind ActivityKind-base_Classifier">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Classifier_ActivityKind-extension_ActivityKind" name="extension_ActivityKind" type="ActivityKind" aggregation="composite" owningAssociation="Classifier_ActivityKind" association="Classifier_ActivityKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Class_CategoryKind" name="Class_CategoryKind" memberEnd="Class_CategoryKind-extension_CategoryKind CategoryKind-base_Class">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Class_CategoryKind-extension_CategoryKind" name="extension_CategoryKind" type="CategoryKind" aggregation="composite" owningAssociation="Class_CategoryKind" association="Class_CategoryKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Class_GuidanceKind" name="Class_GuidanceKind" memberEnd="Class_GuidanceKind-extension_GuidanceKind GuidanceKind-base_Class">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Class_GuidanceKind-extension_GuidanceKind" name="extension_GuidanceKind" type="GuidanceKind" aggregation="composite" owningAssociation="Class_GuidanceKind" association="Class_GuidanceKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Association_PerformerMapKind" name="Association_PerformerMapKind" memberEnd="Association_PerformerMapKind-extension_PerformerMapKind PerformerKind-base_Association">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Association_PerformerMapKind-extension_PerformerMapKind" name="extension_PerformerMapKind" type="PerformerKind" aggregation="composite" owningAssociation="Association_PerformerMapKind" association="Association_PerformerMapKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Class_WorkProductKind" name="Class_WorkProductKind" memberEnd="Class_WorkProductKind-extension_WorkProductKind WorkProductKind-base_Class">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Class_WorkProductKind-extension_WorkProductKind" name="extension_WorkProductKind" type="WorkProductKind" aggregation="composite" owningAssociation="Class_WorkProductKind" association="Class_WorkProductKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Extension" xmi:id="Association_WorkProductRelationshipKind" name="Association_WorkProductRelationshipKind" memberEnd="Association_WorkProductRelationshipKind-extension_WorkProductRelationshipKind WorkProductRelationshipKind-base_Association">
+<ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="Association_WorkProductRelationshipKind-extension_WorkProductRelationshipKind" name="extension_WorkProductRelationshipKind" type="WorkProductRelationshipKind" aggregation="composite" owningAssociation="Association_WorkProductRelationshipKind" association="Association_WorkProductRelationshipKind"/>
+</packagedElement>
+<packagedElement xmi:type="uml:Stereotype" xmi:id="ProcessPlanningTemplate" name="ProcessPlanningTemplate">
+<generalization xmi:type="uml:Generalization" xmi:id="ProcessPlanningTemplate-_generalization.0" general="Process" specific="ProcessPlanningTemplate"/>
+<icon xmi:type="uml:Image" xmi:id="ProcessPlanningTemplate-_icon.0"/>
+<icon xmi:type="uml:Image" xmi:id="ProcessPlanningTemplate-_icon.1"/>
+</packagedElement>
+</uml:Profile>
