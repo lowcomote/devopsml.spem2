@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spem:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spem="http://schema.omg.org/spec/SPEM/2.0/spem.xml" xmi:id="_ilivwMc6EeqcEoI-7GZEiA" name="gitflowrelease">
+  <packagedElement xsi:type="spem:RoleDefinition" xmi:id="_Ie5rIMdHEeqcEoI-7GZEiA" name="ReleaseManager" variabilityBasedOnElement="_Ie5rIMdHEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:DefaultResponsibilityAssignment" xmi:id="_N2hd0MdMEeqcEoI-7GZEiA" name="ReleaseResponsibility" variabilityBasedOnElement="_N2hd0MdMEeqcEoI-7GZEiA" linkedRoleDefinition="_Ie5rIMdHEeqcEoI-7GZEiA" linkedWorkproductDefinition="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_9GZ_UMc6EeqcEoI-7GZEiA" name="StagingRelease" variabilityBasedOnElement="_9GZ_UMc6EeqcEoI-7GZEiA" usedTool="_MPGnUMc8EeqcEoI-7GZEiA _so2q8Mc-EeqcEoI-7GZEiA __bAiYMc-EeqcEoI-7GZEiA _Fk1nYMc_EeqcEoI-7GZEiA">
+    <ownedTaskDefinitionParameter xmi:id="_1HcvQMc7EeqcEoI-7GZEiA" name="masterbranch" variabilityBasedOnElement="_1HcvQMc7EeqcEoI-7GZEiA" direction="in" paramterType="_Rn0N4Mc7EeqcEoI-7GZEiA"/>
+    <ownedTaskDefinitionParameter xmi:id="_D4C48MdAEeqcEoI-7GZEiA" name="developbranch" variabilityBasedOnElement="_D4C48MdAEeqcEoI-7GZEiA" direction="in" paramterType="_1Cp5YMc8EeqcEoI-7GZEiA"/>
+    <ownedTaskDefinitionParameter xmi:id="_PynNgMdAEeqcEoI-7GZEiA" name="releasebranch" variabilityBasedOnElement="_PynNgMdAEeqcEoI-7GZEiA" direction="out" paramterType="_2dW80Mc8EeqcEoI-7GZEiA"/>
+    <ownedTaskDefinitionParameter xmi:id="_SCMGoMdEEeqcEoI-7GZEiA" name="releaseproduct" variabilityBasedOnElement="_SCMGoMdEEeqcEoI-7GZEiA" direction="out" paramterType="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  </packagedElement>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_LRryQMc7EeqcEoI-7GZEiA" name="StableRelease" variabilityBasedOnElement="_LRryQMc7EeqcEoI-7GZEiA" usedTool="_Fk1nYMc_EeqcEoI-7GZEiA">
+    <ownedTaskDefinitionParameter xmi:id="_RbCQ8MdNEeqcEoI-7GZEiA" name="masterbranch_for_stable" variabilityBasedOnElement="_RbCQ8MdNEeqcEoI-7GZEiA" paramterType="_Rn0N4Mc7EeqcEoI-7GZEiA"/>
+    <ownedTaskDefinitionParameter xmi:id="_xNeu4MdNEeqcEoI-7GZEiA" name="releasebranch_for_stable" variabilityBasedOnElement="_xNeu4MdNEeqcEoI-7GZEiA" direction="in" paramterType="_2dW80Mc8EeqcEoI-7GZEiA"/>
+    <ownedTaskDefinitionParameter xmi:id="_H74ZcMdOEeqcEoI-7GZEiA" name="releaseproduct_for_stable" variabilityBasedOnElement="_H74ZcMdOEeqcEoI-7GZEiA" direction="in" paramterType="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  </packagedElement>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_Rn0N4Mc7EeqcEoI-7GZEiA" name="MasterBranch" variabilityBasedOnElement="_Rn0N4Mc7EeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_1Cp5YMc8EeqcEoI-7GZEiA" name="DevelopBranch" variabilityBasedOnElement="_1Cp5YMc8EeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_2dW80Mc8EeqcEoI-7GZEiA" name="ReleaseBranch" variabilityBasedOnElement="_2dW80Mc8EeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_CgnPIMdEEeqcEoI-7GZEiA" name="ReleaseProduct" variabilityBasedOnElement="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinitionRelationship" xmi:id="_saaXkMdEEeqcEoI-7GZEiA" name="releaseproductbranch" variabilityBasedOnElement="_saaXkMdEEeqcEoI-7GZEiA" source="_2dW80Mc8EeqcEoI-7GZEiA" target="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_MPGnUMc8EeqcEoI-7GZEiA" name="Git" variabilityBasedOnElement="_MPGnUMc8EeqcEoI-7GZEiA" managedWorkProduct="_Rn0N4Mc7EeqcEoI-7GZEiA _1Cp5YMc8EeqcEoI-7GZEiA _2dW80Mc8EeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_Fk1nYMc_EeqcEoI-7GZEiA" name="Nexus" variabilityBasedOnElement="_Fk1nYMc_EeqcEoI-7GZEiA" managedWorkProduct="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_so2q8Mc-EeqcEoI-7GZEiA" name="Jenkins" variabilityBasedOnElement="_so2q8Mc-EeqcEoI-7GZEiA" managedWorkProduct="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="__bAiYMc-EeqcEoI-7GZEiA" name="Maven" variabilityBasedOnElement="__bAiYMc-EeqcEoI-7GZEiA" managedWorkProduct="_CgnPIMdEEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_O2o_YMc-EeqcEoI-7GZEiA" name="CreateReleaseBranchFromMasterBranch" variabilityBasedOnElement="_O2o_YMc-EeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Create a branch named release from the branch master"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_xfOcoMdBEeqcEoI-7GZEiA" name="MergeDevelopBranchIntoMasterBranch" variabilityBasedOnElement="_xfOcoMdBEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Merge the develop branch into release and revolve conflicts" predecessor="_O2o_YMc-EeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_dLExgMdCEeqcEoI-7GZEiA" name="PackageReleaseBranch" variabilityBasedOnElement="_dLExgMdCEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Execute build and packaging of the code in the ReleaseBranch" predecessor="_xfOcoMdBEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_44wZgMdCEeqcEoI-7GZEiA" name="DeployInStagingRepository" variabilityBasedOnElement="_44wZgMdCEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Deploy the package with its coordinates in the staging repository of Nexus" predecessor="_dLExgMdCEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_NI6pkMdPEeqcEoI-7GZEiA" name="TestReleasePackage" variabilityBasedOnElement="_NI6pkMdPEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Execute test on the release product stored in Nexus"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_yPFq8MdPEeqcEoI-7GZEiA" name="MergeReleaseBranchIntoMaster" variabilityBasedOnElement="_yPFq8MdPEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Update Master with the release branch code and tag it with the release version number" predecessor="_NI6pkMdPEeqcEoI-7GZEiA"/>
+  <packagedElement xsi:type="spem:Step" xmi:id="_jSq5gMdQEeqcEoI-7GZEiA" name="DeployIntoStableRepository" variabilityBasedOnElement="_jSq5gMdQEeqcEoI-7GZEiA" sectionName="Release protocol" sectionDescription="Deploy the release product in the stable Nexus repository" predecessor="_yPFq8MdPEeqcEoI-7GZEiA"/>
+</spem:Package>
