@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spem:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spem="http://schema.omg.org/spec/SPEM/2.0/spem.xml" xmi:id="_BLcrAMecEeqKTc7tdFy0-g" name="devopsprocess">
+  <packagedElement xsi:type="spem:Activity" xmi:id="_KpVG0MgBEeqiIKodk0hAAQ" name="Plan" linkToPredecessor="_HPvbMMgJEeqiIKodk0hAAQ" linkToSuccessor="_4D8OIMgCEeqiIKodk0hAAQ" variabilityBasedOnElement="_KpVG0MgBEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_CezJQMecEeqKTc7tdFy0-g" name="Code_Model" linkToPredecessor="_4D8OIMgCEeqiIKodk0hAAQ" linkToSuccessor="_jfPJEMgEEeqiIKodk0hAAQ" variabilityBasedOnElement="_CezJQMecEeqKTc7tdFy0-g" usedActivity="_G3oKsMecEeqKTc7tdFy0-g"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_G3oKsMecEeqKTc7tdFy0-g" name="Build" linkToPredecessor="_jfPJEMgEEeqiIKodk0hAAQ" linkToSuccessor="_4qQVUMgEEeqiIKodk0hAAQ" variabilityBasedOnElement="_G3oKsMecEeqKTc7tdFy0-g"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_rCp-kMgBEeqiIKodk0hAAQ" name="Test" linkToPredecessor="_4qQVUMgEEeqiIKodk0hAAQ" linkToSuccessor="_IGLQwMgFEeqiIKodk0hAAQ" variabilityBasedOnElement="_rCp-kMgBEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_6-7OAMgBEeqiIKodk0hAAQ" name="Release" linkToPredecessor="_IGLQwMgFEeqiIKodk0hAAQ" linkToSuccessor="_ZZTeEMgIEeqiIKodk0hAAQ" variabilityBasedOnElement="_6-7OAMgBEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_LkpDEMgCEeqiIKodk0hAAQ" name="Deploy" linkToPredecessor="_ZZTeEMgIEeqiIKodk0hAAQ" linkToSuccessor="_hBcUIMgIEeqiIKodk0hAAQ" variabilityBasedOnElement="_LkpDEMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_QVjNUMgCEeqiIKodk0hAAQ" name="Operate" linkToPredecessor="_hBcUIMgIEeqiIKodk0hAAQ" linkToSuccessor="_y8dvQMgIEeqiIKodk0hAAQ" variabilityBasedOnElement="_QVjNUMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:Activity" xmi:id="_VV_BUMgCEeqiIKodk0hAAQ" name="Monitor" linkToPredecessor="_y8dvQMgIEeqiIKodk0hAAQ" linkToSuccessor="_HPvbMMgJEeqiIKodk0hAAQ" variabilityBasedOnElement="_QVjNUMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_4D8OIMgCEeqiIKodk0hAAQ" name="Plan_Code" predecessor="_KpVG0MgBEeqiIKodk0hAAQ" successor="_CezJQMecEeqKTc7tdFy0-g"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_jfPJEMgEEeqiIKodk0hAAQ" name="Code_Build" predecessor="_CezJQMecEeqKTc7tdFy0-g" successor="_G3oKsMecEeqKTc7tdFy0-g"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_4qQVUMgEEeqiIKodk0hAAQ" name="Build_Test" predecessor="_G3oKsMecEeqKTc7tdFy0-g" successor="_rCp-kMgBEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_IGLQwMgFEeqiIKodk0hAAQ" name="Test_Release" predecessor="_rCp-kMgBEeqiIKodk0hAAQ" successor="_6-7OAMgBEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_ZZTeEMgIEeqiIKodk0hAAQ" name="Release_Deploy" predecessor="_6-7OAMgBEeqiIKodk0hAAQ" successor="_LkpDEMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_hBcUIMgIEeqiIKodk0hAAQ" name="Deploy_Operate" predecessor="_LkpDEMgCEeqiIKodk0hAAQ" successor="_QVjNUMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_y8dvQMgIEeqiIKodk0hAAQ" name="Operate_Monitor" linkKind="startToStart" predecessor="_QVjNUMgCEeqiIKodk0hAAQ" successor="_VV_BUMgCEeqiIKodk0hAAQ"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_HPvbMMgJEeqiIKodk0hAAQ" name="Monitor_Plan" linkKind="startToStart" predecessor="_VV_BUMgCEeqiIKodk0hAAQ" successor="_KpVG0MgBEeqiIKodk0hAAQ"/>
+</spem:Package>
