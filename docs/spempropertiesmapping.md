@@ -5,7 +5,6 @@
 | Property code | Property description | Spem implementation |
 | ---- | ------------------------------ | ------------------- |
 |P1|A process type (such as claim handling) is defined by the composition of one or more task types  (receive claim, assess claim, pay premium) and their relation |In Spem 2.0 Activities represent processes. Activity is a group of  nested BreakdownElements  such as other Activity instances, Task Uses, Role Uses,Milestones (pag. 46, 97)|
-
 |P2|Ordering constraints between task types of a process type are established through gateways, which may be sequencing, and-split, or-split, and-join and or-join.|Supported by Spem Workflow Diagram (pag. 143)|
 
 |P3|A process type has one initial task type (with which all its executions begin), and one or more final task types (with which all its executions end)|Supported by Spem Workflow Diagram (pag. 143)|
@@ -27,7 +26,7 @@ Typical examples are (pag. 85): Primary Performer, Responsible, Accountable, and
 
 |P11|Each process comprises one or more tasks.|Activities can be nested and can contain task Use|
 
-|p12|Each task has a begin date and an end date.  (e.g., Assessing Claim 123 has begin date 01-Jan-19  and end date 02-Jan-19).|Spem has the Planning Data element (pag. 106)
+|P12|Each task has a begin date and an end date.  (e.g., Assessing Claim 123 has begin date 01-Jan-19  and end date 02-Jan-19).|Spem has the Planning Data element (pag. 106)
 with properties: startDate, finishDate and duration|
 
 
