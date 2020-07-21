@@ -1,6 +1,6 @@
 
 
-
+The following table show the mapping between the Multi Process properties identified in the challenge (https://ieeexplore.ieee.org/document/8904775) and their implementation in the SPEM metamodel (https://www.omg.org/spec/SPEM/About-SPEM/). The page numbers in the Spem implementation column refers to the official Spem book (https://www.omg.org/spec/SPEM/About-SPEM/).
 
 | Property code | Property description | Spem implementation |
 | ---- | ------------------------------ | ------------------- |
