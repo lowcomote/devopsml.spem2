@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<spem:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spem="http://schema.omg.org/spec/SPEM/2.0/spem.xml" xmi:id="_ilivwMc6EeqcEoI-7GZEiA" name="gitflowrelease">
+<spem:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spem="http://schema.omg.org/spec/SPEM/2.0/spem.xml" xmi:id="_ilivwMc6EeqcEoI-7GZEiA" name="gitflowrelease_extended">
   <packagedElement xsi:type="spem:RoleDefinition" xmi:id="_Ie5rIMdHEeqcEoI-7GZEiA" name="ReleaseManager" variabilityBasedOnElement="_Ie5rIMdHEeqcEoI-7GZEiA"/>
   <packagedElement xsi:type="spem:DefaultResponsibilityAssignment" xmi:id="_N2hd0MdMEeqcEoI-7GZEiA" name="ReleaseResponsibility" variabilityBasedOnElement="_N2hd0MdMEeqcEoI-7GZEiA" linkedRoleDefinition="_Ie5rIMdHEeqcEoI-7GZEiA" linkedWorkproductDefinition="_CgnPIMdEEeqcEoI-7GZEiA"/>
   <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_9GZ_UMc6EeqcEoI-7GZEiA" name="StagingRelease" variabilityBasedOnElement="_9GZ_UMc6EeqcEoI-7GZEiA" usedTool="_MPGnUMc8EeqcEoI-7GZEiA _so2q8Mc-EeqcEoI-7GZEiA __bAiYMc-EeqcEoI-7GZEiA _Fk1nYMc_EeqcEoI-7GZEiA">
