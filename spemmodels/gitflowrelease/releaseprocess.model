@@ -33,15 +33,15 @@
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_Re6pIOe_EequIN9aKYh6JA" name="BuildManager" variabilityBasedOnElement="_Re6pIOe_EequIN9aKYh6JA" managedWorkProduct="_XPXFIOe8EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_49nrUOfDEequIN9aKYh6JA" name="ArtifactRepository" variabilityBasedOnElement="_49nrUOfDEequIN9aKYh6JA" managedWorkProduct="_XPXFIOe8EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:Guidance" xmi:id="_0tZW0OfEEequIN9aKYh6JA" name="StartRelease" variabilityBasedOnElement="_0tZW0OfEEequIN9aKYh6JA">
-    <description xmi:id="_e6RMQOfFEequIN9aKYh6JA" briefDescription="Fork a release branch off of develop."/>
+    <description xmi:id="_e6RMQOfFEequIN9aKYh6JA" presentationName="Start Release" briefDescription="Fork a release branch off of develop." mainDescription="Fork a release branch off of develop." purpose="Start release branch"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:Guidance" xmi:id="_wWZE4OfFEequIN9aKYh6JA" name="PerformRelease">
-    <description xmi:id="_323zwOfFEequIN9aKYh6JA" briefDescription="Bug fixes, documentation generation and other release-oriented steps have to be performed. Through the CI-CD-Server and the BuildManager a new release is obtained."/>
+  <packagedElement xsi:type="spem:Guidance" xmi:id="_wWZE4OfFEequIN9aKYh6JA" name="PerformRelease" variabilityBasedOnElement="_wWZE4OfFEequIN9aKYh6JA">
+    <description xmi:id="_323zwOfFEequIN9aKYh6JA" presentationName="Perform release tasks" briefDescription="Bug fixes, documentation generation and other release-oriented steps have to be performed. Through the CI-CD-Server and the BuildManager a new release is obtained." mainDescription="Bug fixes, documentation generation and other release-oriented steps have to be performed. Through the CI-CD-Server and the BuildManager a new release is obtained." purpose="Produce the release package"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:Guidance" xmi:id="_HaTFYOfGEequIN9aKYh6JA" name="MergeRelease">
-    <description xmi:id="_LcnEQOfGEequIN9aKYh6JA" briefDescription="merge Release branch into Master and Develop, and tag Master with the version number."/>
+  <packagedElement xsi:type="spem:Guidance" xmi:id="_HaTFYOfGEequIN9aKYh6JA" name="MergeRelease" variabilityBasedOnElement="_HaTFYOfGEequIN9aKYh6JA">
+    <description xmi:id="_LcnEQOfGEequIN9aKYh6JA" presentationName="Merge to Master" briefDescription="merge Release branch into Master and Develop, and tag Master with the version number." mainDescription="merge Release branch into Master and Develop, and tag Master with the version number." purpose="Align Master and Develop with the release"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:Guidance" xmi:id="_WJ5GUOfGEequIN9aKYh6JA" name="DeliverRelease">
-    <description xmi:id="_Z6550OfGEequIN9aKYh6JA" briefDescription="The release product, that is a concrete occurrence of a package definition,  is delivered to the artifact repository, where it is ready for deploying."/>
+  <packagedElement xsi:type="spem:Guidance" xmi:id="_WJ5GUOfGEequIN9aKYh6JA" name="DeliverRelease" variabilityBasedOnElement="_WJ5GUOfGEequIN9aKYh6JA">
+    <description xmi:id="_Z6550OfGEequIN9aKYh6JA" presentationName="Deliver the release" briefDescription="The release product, that is a concrete occurrence of a package definition,  is delivered to the artifact repository, where it is ready for deploying." mainDescription="The release product, that is a concrete occurrence of a package definition,  is delivered to the artifact repository, where it is ready for deploying." purpose="Deliver the release"/>
   </packagedElement>
 </spem:Package>
