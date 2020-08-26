@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ASCII"?>
+<spem:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spem="http://schema.omg.org/spec/SPEM/2.0/spem.xml" xmi:id="_bRiO0Od0EequIN9aKYh6JA" name="Release">
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_hYfmAOd0EequIN9aKYh6JA" name="Start" linkToSuccessor="_o83g8Od1EequIN9aKYh6JA" task="_QZnSIOe4EequIN9aKYh6JA">
+    <ownedProcessParameter xmi:id="_ui7JgOeAEequIN9aKYh6JA" name="developBranch" direction="in" parameterType="_LRRZwOeAEequIN9aKYh6JA"/>
+    <ownedProcessParameter xmi:id="_IQFEMOeBEequIN9aKYh6JA" name="releaseBranch" direction="out" parameterType="_OMbG0OeBEequIN9aKYh6JA"/>
+  </packagedElement>
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_38ae4Od0EequIN9aKYh6JA" name="Perform" linkToPredecessor="_o83g8Od1EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_z6owEOe3EequIN9aKYh6JA" name="Merge"/>
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_CiZDoOe4EequIN9aKYh6JA" name="Deliver"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_o83g8Od1EequIN9aKYh6JA" name="startperform" predecessor="_hYfmAOd0EequIN9aKYh6JA" successor="_38ae4Od0EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_LRRZwOeAEequIN9aKYh6JA" name="Develop" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_OMbG0OeBEequIN9aKYh6JA" name="Release" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_c2C9oOe4EequIN9aKYh6JA" name="BranchStructure" variabilityBasedOnElement="_c2C9oOe4EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_QZnSIOe4EequIN9aKYh6JA" name="BranchesDefinition" variabilityBasedOnElement="_QZnSIOe4EequIN9aKYh6JA" usedTool="_cpvfoOe7EequIN9aKYh6JA _NcfSUOe7EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_NcfSUOe7EequIN9aKYh6JA" name="SourceCodeManager" variabilityBasedOnElement="_NcfSUOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_cpvfoOe7EequIN9aKYh6JA" name="CI-CD-Server" variabilityBasedOnElement="_cpvfoOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA"/>
+</spem:Package>
