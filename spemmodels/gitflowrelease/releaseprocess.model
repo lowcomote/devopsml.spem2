@@ -8,23 +8,28 @@
     <ownedProcessParameter xmi:id="_7zmBoOe9EequIN9aKYh6JA" name="releaseForPerform" direction="in" parameterType="_OMbG0OeBEequIN9aKYh6JA"/>
     <ownedProcessParameter xmi:id="_RFOMMOe-EequIN9aKYh6JA" name="releaseProductForPerform" direction="out" parameterType="_wNdsAOe9EequIN9aKYh6JA"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:TaskUse" xmi:id="_z6owEOe3EequIN9aKYh6JA" name="Merge" linkToPredecessor="_EUQJMOfAEequIN9aKYh6JA" task="_QZnSIOe4EequIN9aKYh6JA">
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_z6owEOe3EequIN9aKYh6JA" name="Merge" linkToPredecessor="_EUQJMOfAEequIN9aKYh6JA" linkToSuccessor="_qLbe0OfCEequIN9aKYh6JA" task="_QZnSIOe4EequIN9aKYh6JA">
     <ownedProcessParameter xmi:id="_-Ej3UOfAEequIN9aKYh6JA" name="releaseForMerge" direction="in" parameterType="_OMbG0OeBEequIN9aKYh6JA"/>
     <ownedProcessParameter xmi:id="_STLFsOfBEequIN9aKYh6JA" name="masterForMerge" parameterType="_15eFMOfAEequIN9aKYh6JA"/>
     <ownedProcessParameter xmi:id="_cu0lMOfBEequIN9aKYh6JA" name="developForMerge" parameterType="_LRRZwOeAEequIN9aKYh6JA"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:TaskUse" xmi:id="_CiZDoOe4EequIN9aKYh6JA" name="Deliver"/>
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_CiZDoOe4EequIN9aKYh6JA" name="Deliver" linkToPredecessor="_qLbe0OfCEequIN9aKYh6JA" task="_XGKzQOfEEequIN9aKYh6JA">
+    <ownedProcessParameter xmi:id="_cN9B4OfDEequIN9aKYh6JA" name="releaseProductForDeliver" direction="in" parameterType="_wNdsAOe9EequIN9aKYh6JA"/>
+  </packagedElement>
   <packagedElement xsi:type="spem:WorkSequence" xmi:id="_o83g8Od1EequIN9aKYh6JA" name="startperform" predecessor="_hYfmAOd0EequIN9aKYh6JA" successor="_38ae4Od0EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkSequence" xmi:id="_EUQJMOfAEequIN9aKYh6JA" name="performmerge" predecessor="_38ae4Od0EequIN9aKYh6JA" successor="_z6owEOe3EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:WorkSequence" xmi:id="_qLbe0OfCEequIN9aKYh6JA" name="mergedeliver" predecessor="_z6owEOe3EequIN9aKYh6JA" successor="_CiZDoOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_LRRZwOeAEequIN9aKYh6JA" name="Develop" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_OMbG0OeBEequIN9aKYh6JA" name="Release" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_wNdsAOe9EequIN9aKYh6JA" name="ReleaseProduct" workProduct="_XPXFIOe8EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_15eFMOfAEequIN9aKYh6JA" name="Master" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
-  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_c2C9oOe4EequIN9aKYh6JA" name="BranchStructure" variabilityBasedOnElement="_c2C9oOe4EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_c2C9oOe4EequIN9aKYh6JA" name="Branch" variabilityBasedOnElement="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_XPXFIOe8EequIN9aKYh6JA" name="PackageDefinition" variabilityBasedOnElement="_cpvfoOe7EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_QZnSIOe4EequIN9aKYh6JA" name="BranchesDefinition" variabilityBasedOnElement="_QZnSIOe4EequIN9aKYh6JA" usedTool="_cpvfoOe7EequIN9aKYh6JA _NcfSUOe7EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_9Xx7wOe-EequIN9aKYh6JA" name="ReleaseDefinition" variabilityBasedOnElement="_9Xx7wOe-EequIN9aKYh6JA" usedTool="_Re6pIOe_EequIN9aKYh6JA _cpvfoOe7EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_XGKzQOfEEequIN9aKYh6JA" name="DeliverDefiniton" variabilityBasedOnElement="_XGKzQOfEEequIN9aKYh6JA" usedTool="_49nrUOfDEequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_NcfSUOe7EequIN9aKYh6JA" name="SourceCodeManager" variabilityBasedOnElement="_NcfSUOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_cpvfoOe7EequIN9aKYh6JA" name="CI-CD-Server" variabilityBasedOnElement="_cpvfoOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA _XPXFIOe8EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_Re6pIOe_EequIN9aKYh6JA" name="BuildManager" variabilityBasedOnElement="_Re6pIOe_EequIN9aKYh6JA" managedWorkProduct="_XPXFIOe8EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_49nrUOfDEequIN9aKYh6JA" name="ArtifactRepository" variabilityBasedOnElement="_49nrUOfDEequIN9aKYh6JA" managedWorkProduct="_XPXFIOe8EequIN9aKYh6JA"/>
 </spem:Package>
