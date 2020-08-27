@@ -13,7 +13,7 @@
     <ownedProcessParameter xmi:id="_STLFsOfBEequIN9aKYh6JA" name="masterForMerge" parameterType="_15eFMOfAEequIN9aKYh6JA"/>
     <ownedProcessParameter xmi:id="_cu0lMOfBEequIN9aKYh6JA" name="developForMerge" parameterType="_LRRZwOeAEequIN9aKYh6JA"/>
   </packagedElement>
-  <packagedElement xsi:type="spem:TaskUse" xmi:id="_CiZDoOe4EequIN9aKYh6JA" name="Deliver" guidance="_WJ5GUOfGEequIN9aKYh6JA" linkToPredecessor="_qLbe0OfCEequIN9aKYh6JA" task="_XGKzQOfEEequIN9aKYh6JA">
+  <packagedElement xsi:type="spem:TaskUse" xmi:id="_CiZDoOe4EequIN9aKYh6JA" name="Delivery" guidance="_WJ5GUOfGEequIN9aKYh6JA" linkToPredecessor="_qLbe0OfCEequIN9aKYh6JA" task="_XGKzQOfEEequIN9aKYh6JA">
     <ownedProcessParameter xmi:id="_cN9B4OfDEequIN9aKYh6JA" name="releaseProductForDeliver" direction="in" parameterType="_wNdsAOe9EequIN9aKYh6JA"/>
   </packagedElement>
   <packagedElement xsi:type="spem:WorkSequence" xmi:id="_o83g8Od1EequIN9aKYh6JA" name="startperform" predecessor="_hYfmAOd0EequIN9aKYh6JA" successor="_38ae4Od0EequIN9aKYh6JA"/>
