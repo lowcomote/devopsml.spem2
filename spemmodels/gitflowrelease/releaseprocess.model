@@ -25,9 +25,9 @@
   <packagedElement xsi:type="spem:WorkProductUse" xmi:id="_15eFMOfAEequIN9aKYh6JA" name="Master" workProduct="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_c2C9oOe4EequIN9aKYh6JA" name="Branch" variabilityBasedOnElement="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:WorkProductDefinition" xmi:id="_XPXFIOe8EequIN9aKYh6JA" name="PackageDefinition" variabilityBasedOnElement="_cpvfoOe7EequIN9aKYh6JA"/>
-  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_QZnSIOe4EequIN9aKYh6JA" name="BranchesDefinition" variabilityBasedOnElement="_QZnSIOe4EequIN9aKYh6JA" usedTool="_cpvfoOe7EequIN9aKYh6JA _NcfSUOe7EequIN9aKYh6JA"/>
-  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_9Xx7wOe-EequIN9aKYh6JA" name="ReleaseDefinition" variabilityBasedOnElement="_9Xx7wOe-EequIN9aKYh6JA" usedTool="_Re6pIOe_EequIN9aKYh6JA _cpvfoOe7EequIN9aKYh6JA"/>
-  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_XGKzQOfEEequIN9aKYh6JA" name="DeliverDefiniton" variabilityBasedOnElement="_XGKzQOfEEequIN9aKYh6JA" usedTool="_49nrUOfDEequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_QZnSIOe4EequIN9aKYh6JA" name="BranchesOperation" variabilityBasedOnElement="_QZnSIOe4EequIN9aKYh6JA" usedTool="_cpvfoOe7EequIN9aKYh6JA _NcfSUOe7EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_9Xx7wOe-EequIN9aKYh6JA" name="ReleaseOperation" variabilityBasedOnElement="_9Xx7wOe-EequIN9aKYh6JA" usedTool="_Re6pIOe_EequIN9aKYh6JA _cpvfoOe7EequIN9aKYh6JA"/>
+  <packagedElement xsi:type="spem:TaskDefinition" xmi:id="_XGKzQOfEEequIN9aKYh6JA" name="DeliveryOperation" variabilityBasedOnElement="_XGKzQOfEEequIN9aKYh6JA" usedTool="_49nrUOfDEequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_NcfSUOe7EequIN9aKYh6JA" name="SourceCodeManager" variabilityBasedOnElement="_NcfSUOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_cpvfoOe7EequIN9aKYh6JA" name="CI-CD-Server" variabilityBasedOnElement="_cpvfoOe7EequIN9aKYh6JA" managedWorkProduct="_c2C9oOe4EequIN9aKYh6JA _XPXFIOe8EequIN9aKYh6JA"/>
   <packagedElement xsi:type="spem:ToolDefinition" xmi:id="_Re6pIOe_EequIN9aKYh6JA" name="BuildManager" variabilityBasedOnElement="_Re6pIOe_EequIN9aKYh6JA" managedWorkProduct="_XPXFIOe8EequIN9aKYh6JA"/>
